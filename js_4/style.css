@@ -1,12 +1,54 @@
+@font-face {
+    font-family: 'Monoton';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Iceland';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Iceland'), local('Iceland-Regular'), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'PressStart';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Audiowide'), local('Audiowide-Regular'), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Vampiro One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Vampiro One'), local('VampiroOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
 body{
     background-color: #090909;
 }
 .field{
     border: 10px rgba(255,255,255,0.77) solid;
-    height: 534px;
-    width: 995px;
+    height: 544px;
+    width: 991px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
+    box-shadow:0px 0px 100px 5px white;
 
 }
 
@@ -16,6 +58,65 @@ body{
     width: 45px;
     /*max-width: 30px;*/
     display: inline-block;
-    margin: 0 0 0 0;
+    margin: 1px;
     margin-bottom: -5px
 }
+
+.gameName{
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-shadow: 0 0 55px red;
+    /*animation: shadow 1s infinite alternate;*/
+    animation: shadow 1.5s ease-in-out infinite alternate;
+    font-family: Pacifico;
+}
+
+
+.gameName:hover {
+    color: white;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+@keyframes shadow {
+    from {
+        text-shadow:  0 0 255px white;
+    }
+    to {
+        text-shadow: 0 0 555px white;
+    }
+}
+/*
+@keyframes shadow {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        text-shadow:
+                -0.2rem -0.2rem 1rem #fff,
+                0.2rem 0.2rem 1rem #fff,
+                0 0 2rem red,
+                0 0 4rem red,
+                0 0 6rem red,
+                0 0 8rem red,
+                0 0 10rem red;
+*/
+
+        /*box-shadow:
+                0 0 .5rem #fff,
+                inset 0 0 .5rem #fff,
+                0 0 2rem red,
+                inset 0 0 2rem red,
+                0 0 4rem red,
+                inset 0 0 4rem red;*/
+/*
+    }
+
+    !*20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }*!
+}*/

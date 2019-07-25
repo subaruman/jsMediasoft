@@ -6,11 +6,14 @@ let field = document.createElement('div');
 field.className = "field";
 document.body.appendChild(field);
 
-createBox(264);
+let gameName = document.createElement('span');
+gameName.className = "gameName";
+gameName.innerHTML = 'The Snake';
+document.body.insertBefore(gameName , field);
 
-
+createBox(252);
 function createBox(cnt) {
-    let box = document.createElement('div');
+    // let box = document.createElement('div');
     for (i = 0; i < cnt; i++){
         let box = document.createElement('div');
         box.className = "box";
