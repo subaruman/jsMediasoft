@@ -1,0 +1,21 @@
+body{
+    background-color: #090909;
+}
+.field{
+    border: 10px rgba(255,255,255,0.77) solid;
+    height: 534px;
+    width: 995px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.box{
+    border: 0.1px rgba(255,255,255,0.17) solid;
+    height: 45px;
+    width: 45px;
+    /*max-width: 30px;*/
+    display: inline-block;
+    margin: 0 0 0 0;
+    margin-bottom: -5px
+}
